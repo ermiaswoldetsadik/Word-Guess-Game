@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HANGMAN</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div>
+        <h1 class="header"> HANGMAN</h1>
+        <img src="assets/images/80sstyle.png" class="yearstyle" alt="80sstyle">
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-4">
+            <img src="assets/images/original Hangman.jpg" class="originalhangman" alt="original">
+        </div>
+        <div class="col-md-4">
+            <p>Press Any Key to Get Started</p>
+            <h3>Guess 80's Artist!</h3>
+                <h3><span id="wordToGuess">_ _ _ _ _ _ _</span></h3>
+                <br>
+                <br>
+                <div class="game">
+                <p><span id="win-counter">Wins: </span></p>
+                <p><span id="loss-counter">Losses: </span></p>
+                <p><span id="wrong-guesses">Wrong Guesses: </span></p>
+                <p><span id="guesses-left">Guesses Remaining: </span></p>
+                
+            
+            </div>
+        </div>
+    
+    </div>
+
+
+
+   
+    <script>
+
+        // GLOBAL VARIABLES
+        // =======================================================
+
+        // Array of word options
+        var bands = ["bangles", "patbenatar", "bonjovi", "davidbowie",
+            "chicago", "philcollins", "cultureclub", "duranduran", "eurythmics",
+            "fleetwoodmac", "foreigner", "genesis", "heart", "whitneyhouston",
+            "billyidol", "janetjackson", "michaeljackson", "billyjoel", "eltonjohn",
+            "journey", "cyndilauper", "kennyloggins", "madonna", "richardmarx", "georgemichael",
+            "motleycrue", "petshopboys", "poison", "prince", "reospeedwagon", "lionelrichie",
+            "rodstewart", "styx", "tinaturner", "thompsontwins", "vanhalen", "wham"]
+
+        // Stores Computer-selected word
+        var selectedWord = "";
+
+        // Array of individual letters to each word
+        var lettersInWord = [];
+
+        // Number of blanks based on solution (selectedWord)
+        var numBlanks = 0;
+
+        // Array to hold mix of blank and solved letters (ex: 'n, _ _, n, _').
+        var blanksAndSuccesses = [];
+
+        // Stores all wrong guesses
+        var wrongGuesses = [];
+
+        // Holds the letters guessed
+        var letterGuessed = "";
+
+        // Game counters
+        var winCounter = 0;
+        var lossCounter = 0;
+        var numGuesses = 15;
+
+    </script>
+    <script src="assets/javascript/game.js" type="text/javascript"></script>
+
+</body>
+
+</html>

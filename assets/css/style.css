@@ -1,0 +1,23 @@
+.header{
+        color: burlywood;
+        font-size: 120px;
+        font-family: 'Titillium Web';
+        font-style: italic;  
+        margin-left: 200px;
+}
+
+.yearstyle{
+    margin-top: -120px;
+    margin-left: 200px;
+}
+.originalhangman{
+    width: 200px;
+    height: 200px;
+    margin-right: 100px;
+}
+.row{
+    margin-left: 200px;
+}
+.col-md-4{
+    border:8px dotted black;
+}
