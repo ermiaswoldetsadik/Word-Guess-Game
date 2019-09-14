@@ -37,6 +37,25 @@ function startGame() {
   document.getElementById("wrong-guesses").innerHTML = "Wrong Guesses: " + wrongGuesses.join(" ");
 }
 
+// add audio function//
+
+function aud() {
+
+
+  if (selectedWord === bands[0]) {
+    console.log(selectedWord);
+    var eltonjohn =  document.getElementById("eltonjohn");
+  eltonjohn.play();
+  
+    eltonjohn.play();
+  }
+    else if (selectedWord === bands[1]) {
+      michaeljackson.play();
+  } 
+
+};
+
+
 
 function checkLetters(letter) {
 
@@ -83,11 +102,14 @@ function checkLetters(letter) {
 }
 
 
+
+
+
 function roundComplete() {
 
 
-  
 
+  
 
   document.getElementById("guesses-left").innerHTML = "Guesses Left: " + maxguesses;
 
@@ -103,7 +125,7 @@ function roundComplete() {
 
     winCounter++;
 
-
+aud();
     alert("You Win!");
 
 
