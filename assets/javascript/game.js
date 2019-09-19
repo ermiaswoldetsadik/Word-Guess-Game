@@ -50,9 +50,10 @@ function aud() {
     eltonjohn.play();
   }
     else if (selectedWord === bands[1]) {
+      var michaeljackson =  document.getElementById("michaeljackson");
       michaeljackson.play();
   } 
-
+ 
 };
 
 
