@@ -127,7 +127,7 @@ function roundComplete() {
     winCounter++;
 
 aud();
-    alert("You Win!");
+    alert("You Won!!Click 'OK' to hear the Artist Play!");
 
 
     document.getElementById("win-counter").innerHTML = "Wins: " + winCounter;
