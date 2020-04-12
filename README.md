@@ -10,4 +10,4 @@ Utilized Technologies:
 - Bootstrap
 - Sass/LESS
 - JavaScript
-![GitHub Logo](assets\images\hangman.PNG)
+![assets\images\hangman.PNG]
