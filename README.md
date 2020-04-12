@@ -10,4 +10,4 @@ Utilized Technologies:
 - Bootstrap
 - Sass/LESS
 - JavaScript
-![alt text](hangman.PNG)
+<img src="assets\images\hangman.PNG">
