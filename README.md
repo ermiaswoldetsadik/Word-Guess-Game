@@ -11,4 +11,4 @@ Utilized Technologies:
 - Sass/LESS
 - JavaScript
 
-![assets\images\hangman.PNG]
+![hangman]
